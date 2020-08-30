@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class UserController {
@@ -53,7 +54,7 @@ public class UserController {
         if (logout != null)
             model.addAttribute("message", "You have logged out successfully.");
 
-        return "login";
+        return "login2";
     }
 
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
