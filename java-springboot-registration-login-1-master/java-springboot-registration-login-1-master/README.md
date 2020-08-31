@@ -37,3 +37,5 @@ Make sure to use java 1.8
 - [Maven](https://maven.apache.org/)
 - [Bootstrap 3](http://getbootstrap.com)
 - [sdkman.io](http://sdkman.io/)
+
+### Able to run in local. Not in Che. Working on it. Refer attached word document.
