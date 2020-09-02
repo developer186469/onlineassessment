@@ -40,9 +40,9 @@ public class UserController {
         }
 
         userService.save(userForm);
-
-        securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
-
+        System.out.println("Username registered : " + userForm.getUsername());
+        securityService.autologin(userForm.getUsername(), userForm.getPassword());
+        System.out.println("auto login success. redirecting to welcome");
         return "redirect:/welcome";
     }
 

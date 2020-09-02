@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Hibernate Assessment</title>
+</head>
+<body>
+<form action="#" th:action="@{/students/add}" th:object="${student}" method="post">
+<div>
+<label>Question 1: What is the full form of ORM?</label>
+<input type="radio" id="Q1-Opt1" name="Question1" value="Object Random Memory">
+<input type="radio" id="Q1-Opt2" name="Question1" value="Object Relational Mismatch">
+<input type="radio" id="Q1-Opt3" name="Question1" value="Object Relational Mapping">
+<input type="radio" id="Q1-Opt4" name="Question1" value="Object Random Mapping">
+</div>
+<div>
+<label>Question 2: In Hibernate, based on directionality, what could be the mappings?</label>
+<input type="radio" id="Q2-Opt1" name="Question2" value="uni-directional & bi-directional">
+<input type="radio" id="Q2-Opt2" name="Question2" value="one-to-many & many-to-one">
+<input type="radio" id="Q2-Opt3" name="Question2" value="inheritance mapping">
+<input type="radio" id="Q2-Opt4" name="Question2" value="north & south mapping">
+</div>
+<div>
+<label>Question 3: In an Hibernate application, which file would have datasource details?</label>
+<input type="radio" id="Q3-Opt1" name="Question3" value="hibernate mapping file">
+<input type="radio" id="Q3-Opt2" name="Question3" value="configuration file">
+<input type="radio" id="Q3-Opt3" name="Question3" value="Model/Entity class">
+<input type="radio" id="Q3-Opt4" name="Question3" value="HibernateUtil class">
+</div>
+<div>
+<label>Question 4: What is the full form of HQL?</label>
+<input type="radio" id="Q4-Opt1" name="Question4" value="High-level Query Language">
+<input type="radio" id="Q4-Opt2" name="Question4" value="Hidden Query Language">
+<input type="radio" id="Q4-Opt3" name="Question4" value="Hibernate Query Language">
+<input type="radio" id="Q4-Opt4" name="Question4" value="Hibernate Quadratic Language">
+</div>
+<div>
+<label>Question 5: In an Hibernate application, concurrency can be controlled by setting?</label>
+<input type="radio" id="Q5-Opt1" name="Question5" value="concurrency level">
+<input type="radio" id="Q5-Opt2" name="Question5" value="one-to-one mapping">
+<input type="radio" id="Q5-Opt3" name="Question5" value="many-to-one bi-directional mapping">
+<input type="radio" id="Q5-Opt4" name="Question5" value="isolation levels">
+</div>
+<button type="submit" id="submithibernate">Submit</button>
+</form>
+</body>
+</html>
