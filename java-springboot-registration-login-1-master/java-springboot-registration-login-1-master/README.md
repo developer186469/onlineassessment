@@ -90,3 +90,9 @@ org.springframework.security.authentication.BadCredentialsException: Bad credent
 I'll take a look at this tomorrow.
 
 You continue with setting up the evaluation logic. I'll fix this.
+
+###nothing to check in today. 
+Looks like html only they wanted us to use for the assessment page.. 
+So trying it as a separate project. I'll continue there and let's see how to merge in final.
+Thymeleaf and jsp together view caused some more issue. 
+So trying to work as separate to continue the atleast.
