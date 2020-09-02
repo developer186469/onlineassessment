@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring Assessment</title>
+</head>
+<body>
+<form action="#" th:action="@{/students/add}" th:object="${student}" method="post">
+                     
+<div>
+<label>Question 1: What is spring?</label>
+<input type="radio" id="Q1-Opt1" name="Question1" value="J2EE App Server">
+<input type="radio" id="Q1-Opt2" name="Question1" value="J2EE App Development Framework">
+<input type="radio" id="Q1-Opt3" name="Question1" value="Configuration Management Tool">
+<input type="radio" id="Q1-Opt4" name="Question1" value="Build Tool">
+</div>
+<div>
+<label>Question 2: What is the full form of IOC?</label>
+<input type="radio" id="Q2-Opt1" name="Question2" value="Inversion Of Control">
+<input type="radio" id="Q2-Opt2" name="Question2" value="Interjection of Control">
+<input type="radio" id="Q2-Opt3" name="Question2" value="Internal Object Control">
+<input type="radio" id="Q2-Opt4" name="Question2" value="In-built Object Control">
+</div>
+<div>
+<label>Question 3: What is the full form of AOP?</label>
+<input type="radio" id="Q3-Opt1" name="Question3" value="Anticipation of Properties">
+<input type="radio" id="Q3-Opt2" name="Question3" value="Aspect Oriented Programming">
+<input type="radio" id="Q3-Opt3" name="Question3" value="Associated Object Programming">
+<input type="radio" id="Q3-Opt4" name="Question3" value="Anti Object Programming">
+</div>
+<div>
+<label>Question 4: Which of the below is a spring container?</label>
+<input type="radio" id="Q4-Opt1" name="Question4" value="View Resolver">
+<input type="radio" id="Q4-Opt2" name="Question4" value="Application Context">
+<input type="radio" id="Q4-Opt3" name="Question4" value="Handler Mapping">
+<input type="radio" id="Q4-Opt4" name="Question4" value="Dispatcher Servlet">
+</div>
+<div>
+<label>Question 5: Which is Spring's front Controller Implementation?</label>
+<input type="radio" id="Q5-Opt1" name="Question5" value="Bean Factory">
+<input type="radio" id="Q5-Opt2" name="Question5" value="Class Path Application Context">
+<input type="radio" id="Q5-Opt3" name="Question5" value="Application Context">
+<input type="radio" id="Q5-Opt4" name="Question5" value="Dispatcher Servlet">
+</div>
+<button type="submit" id="submitspring">Submit</button>
+</form>
+</body>
+</html>

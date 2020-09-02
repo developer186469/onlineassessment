@@ -38,4 +38,29 @@ Make sure to use java 1.8
 - [Bootstrap 3](http://getbootstrap.com)
 - [sdkman.io](http://sdkman.io/)
 
-### Able to run in local. Not in Che. Working on it. Refer attached word document.
+### 1 sep - made some changes in user model (all related java files) 
+made changes in login and registration jsp
+added html pages for both quiz. working on the evaluation logic. (will continue this).
+
+one strange thing is cant acces the welcome page as direct link even.
+
+this is the errors came 
+
+2020-09-01 21:16:57.690  INFO 13016 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+Hibernate: alter table user_role drop constraint FKa68196081fvovjhkek5m97n3y
+2020-09-01 21:16:57.700 ERROR 13016 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table user_role drop constraint FKa68196081fvovjhkek5m97n3y
+2020-09-01 21:16:57.700 ERROR 13016 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : user lacks privilege or object not found: PUBLIC.USER_ROLE
+Hibernate: alter table user_role drop constraint FK859n2jvi8ivhui0rl0esws6o
+2020-09-01 21:16:57.701 ERROR 13016 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table user_role drop constraint FK859n2jvi8ivhui0rl0esws6o
+2020-09-01 21:16:57.701 ERROR 13016 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : user lacks privilege or object not found: PUBLIC.USER_ROLE
+Hibernate: drop table role if exists
+
+Hibernate: select user0_.id as id1_1_, user0_.firstname as firstnam2_1_, user0_.lastname as lastname3_1_, user0_.password as password4_1_, user0_.username as username5_1_ from user user0_ where user0_.username=?
+2020-09-01 21:26:01.951 ERROR 13016 --- [nio-8080-exec-9] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_161]
+Caused by: java.lang.NullPointerException: null
+	at com.akjavadev.auth.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:29) ~[classes/:na]
+	at 
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
