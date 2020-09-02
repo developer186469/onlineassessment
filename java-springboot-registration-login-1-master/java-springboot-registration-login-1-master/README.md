@@ -64,3 +64,29 @@ Caused by: java.lang.NullPointerException: null
 	at 
 
 org.springframework.security.authentication.InternalAuthenticationServiceException: null
+
+### comments
+
+1)
+Fixed the nullpointer issue in loadUserByUsername.
+Issue was in the login page, username textbox name was changed to Email id.
+But in the user object, attribute name its expecting was username. So, set the name of the text box to username, but still we can enter email id for login
+
+2)
+2 Roles and an admin user will be created while application starts
+Refer: InitalDataLoaderService class
+https://www.baeldung.com/role-and-privilege-for-spring-security-registration
+
+Issues:
+1) Admin user able to login but welcome page not loading
+2) Registered users are not able to login from registeration page, bcoz of below issue.
+
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:98)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.akjavadev.auth.service.SecurityServiceImpl.autologin(SecurityServiceImpl.java:43)
+
+I'll take a look at this tomorrow.
+
+You continue with setting up the evaluation logic. I'll fix this.

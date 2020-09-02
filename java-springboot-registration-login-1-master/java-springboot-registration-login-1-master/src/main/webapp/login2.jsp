@@ -19,7 +19,7 @@
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
-            <input name="Email ID" id="email" type="email" class="form-control" placeholder="Email ID" required autofocus="true"/>
+            <input name="username" id="username" type="email" class="form-control" placeholder="Email Id" required autofocus="true"/>
             <input name="Password" id="password" type="password" class="form-control" placeholder="Password" required/>
             <span>${error}</span>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>

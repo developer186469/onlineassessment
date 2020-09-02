@@ -28,7 +28,7 @@ public class UserValidator implements Validator {
         }
       
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "lastname", "NotEmpty");
-        if (user.getFirstname().length() < 1 || user.getLastname().length() > 32) {
+        if (user.getLastname().length() < 1 || user.getLastname().length() > 32) {
             errors.rejectValue("lastname", "Size.userForm.lastname");
         }
         

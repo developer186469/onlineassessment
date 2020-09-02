@@ -6,6 +6,8 @@ import java.util.Set;
 @Entity
 @Table(name = "user")
 public class User {
+
+    @Column(name = "user_id")
     private Long id;
     private String firstname;
     private String lastname;

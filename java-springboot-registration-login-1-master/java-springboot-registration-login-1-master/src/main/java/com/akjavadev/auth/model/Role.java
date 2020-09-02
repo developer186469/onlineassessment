@@ -6,9 +6,18 @@ import java.util.Set;
 @Entity
 @Table(name = "role")
 public class Role {
+    @Column(name = "role_id")
     private Long id;
     private String name;
     private Set<User> users;
+
+    public Role(){
+
+    }
+
+    public Role(String name) {
+        this.name = name;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
