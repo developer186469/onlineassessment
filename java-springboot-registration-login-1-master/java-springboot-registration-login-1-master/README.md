@@ -96,3 +96,5 @@ Looks like html only they wanted us to use for the assessment page..
 So trying it as a separate project. I'll continue there and let's see how to merge in final.
 Thymeleaf and jsp together view caused some more issue. 
 So trying to work as separate to continue the atleast.
+
+### very sorry tried sometime today but couldn't make progress. I'll try again tomorrow. very sorry.
