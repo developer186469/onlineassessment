@@ -110,3 +110,7 @@ Below 2 links were very useful in completing this
 For base setup : https://mkyong.com/spring-boot/spring-boot-spring-security-thymeleaf-example/
 For success handler: https://www.yawintutor.com/spring-boot-security-step-by-step-5/
 
+### this is totally marvelous job. How come just in half a day ..
+ unfortunately couldn't call today, sorry. 
+ I just started project work now. If not tonight, ll do a commit Tomo morning
+ Office work kept me occupied today.
