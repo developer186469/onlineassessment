@@ -114,3 +114,7 @@ For success handler: https://www.yawintutor.com/spring-boot-security-step-by-ste
  unfortunately couldn't call today, sorry. 
  I just started project work now. If not tonight, ll do a commit Tomo morning
  Office work kept me occupied today.
+
+Finished report of candidates page. When I added report of exam page
+Application is not detecting the service.. some annotations issue I think
+File size has become big. I'll check in file by file Tom
