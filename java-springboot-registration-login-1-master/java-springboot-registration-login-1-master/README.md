@@ -97,4 +97,18 @@ So trying it as a separate project. I'll continue there and let's see how to mer
 Thymeleaf and jsp together view caused some more issue. 
 So trying to work as separate to continue the atleast.
 
-### very sorry tried sometime today but couldn't make progress. I'll try again tomorrow. very sorry.
+
+###Successs
+
+Was able to set up complete end to end flow. included your pages too in the flow.
+Refer screenshots_new doc.
+
+Whole code was built on top of your code base. So, take the assessmentportal_updated.zip file and build on top of it.
+
+I'm sorry i'm not able to fix the alignment. We will try to fix the allignment and finish setup based on the requirement.
+
+Below 2 links were very useful in completing this
+For base setup : https://mkyong.com/spring-boot/spring-boot-spring-security-thymeleaf-example/
+For success handler: https://www.yawintutor.com/spring-boot-security-step-by-step-5/
+
+
