@@ -97,7 +97,6 @@ So trying it as a separate project. I'll continue there and let's see how to mer
 Thymeleaf and jsp together view caused some more issue. 
 So trying to work as separate to continue the atleast.
 
-
 ###Successs
 
 Was able to set up complete end to end flow. included your pages too in the flow.
@@ -110,5 +109,4 @@ I'm sorry i'm not able to fix the alignment. We will try to fix the allignment a
 Below 2 links were very useful in completing this
 For base setup : https://mkyong.com/spring-boot/spring-boot-spring-security-thymeleaf-example/
 For success handler: https://www.yawintutor.com/spring-boot-security-step-by-step-5/
-
 
