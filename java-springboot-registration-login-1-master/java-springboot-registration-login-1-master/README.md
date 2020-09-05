@@ -46,3 +46,5 @@ For success handler: https://www.yawintutor.com/spring-boot-security-step-by-ste
 Just like access denied handler , need to setup authentication failure
 Handler. I'm not able to figure out how though.
 Trick is in routing to diff pages for invalid user and Invalid pwd
+
+Can u check in the code.. I'll look into it 
