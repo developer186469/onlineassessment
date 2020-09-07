@@ -50,3 +50,22 @@ Trick is in routing to diff pages for invalid user and Invalid pwd
 Failure handler did not set yet, made other changes.
 Just that issue alone left. 
 Check the new admins entered in initial data loader  
+###
+Thankfully I was able to find out...
+
+Updated code with failure handlers. we handle this using ExceptionMappingAuthenticationFailureHandler and set it as a failureHandler in websecurity config.
+
+It will handle two exceptions, and redirect to pages based on exception
+1) UsernameNotFoundException - to redirect to a page when user is not found. I have updated UserDetailsServiceImpl, to throw this exception if username is not found in DB
+2) BadCredentialsException - handles bad password.
+
+Note: By default BadCredentialsException handles both user not found and bad password. To make it handle only bad password, we had to updated our authentication provider. (check WebSecurityConfig class)
+
+Below provides details about how to use failure handler
+https://www.baeldung.com/spring-security-custom-authentication-failure-handler
+
+Example to use ExceptionMappingAuthenticationFailureHandler is in below link
+https://www.programcreek.com/java-api-examples/?code=helloworldtang%2Fspring-boot-cookbook%2Fspring-boot-cookbook-master%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftangcheng%2Fapp%2Fapi%2Frest%2Fconfig%2FSecurityConfig.java#
+
+to handle badcredential exception, reference is below
+https://stackoverflow.com/questions/17439628/spring-security-custom-exception-message-from-userdetailsservice
